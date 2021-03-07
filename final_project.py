@@ -8,7 +8,7 @@ import smtplib
 
 #email pengirim
 pengirim = "denisealdianto2@gmail.com"
-password = "qwertyuiop18"
+password = ""
 
 #Input email penerima
 #https://www.youtube.com/watch?v=sXjpkcF7rPQ
