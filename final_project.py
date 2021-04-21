@@ -11,7 +11,6 @@ pengirim = input("Masukkan email penggirim = ")
 password = input("Masukkan password email penggirim = ")
 
 #Input email penerima
-#https://www.youtube.com/watch?v=sXjpkcF7rPQ
 msg = MIMEMultipart()
 jumlah = int(input("Jumlah penerima email = "))
 for x in range(jumlah) :
@@ -38,7 +37,6 @@ message = input("Isi pesan = ")
 msg.attach(MIMEText(message,'plain'))
 
 #Input Attechment
-#https://www.youtube.com/watch?v=bXRYJEKjqIM
 namafile = input("Masukkan nama file dan jenis file yang akan dikirim = ")
 attachment = open(namafile,'rb')
 part = MIMEBase('application','octet-stream')
@@ -49,7 +47,6 @@ msg.attach(part)
 msg['Attachment'] = namafile
 
 #Menyambungkan ke server
-#https://www.youtube.com/watch?v=sXjpkcF7rPQ
 server = smtplib.SMTP('smtp.gmail.com: 587')
 server.starttls()
 server.login(msg['From'], password)
